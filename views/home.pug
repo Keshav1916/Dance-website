@@ -1,0 +1,44 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style 
+  style 
+    include ../static/style.css 
+
+block content
+      section#infoSection 
+          div Welcome to Shivani's Dance Academy 
+          div.small Eat Sleep Dance Repeat 
+
+      section#missionSection 
+          h1 Our mission  
+          div.card
+            h3 Dance Perfection
+            div.card-box
+              div.card-img
+                img(src="/static/img/6.png")
+              div.card-content
+                p Come join in the fun and be part of the Studio Dance Perfection family. 
+          div.card
+            h3 Dance the way as like
+            div.card-box
+              div.card-img
+                img(src="/static/img/7.png")
+              div.card-content
+                p Like any form of art, dancing is a mode of expression.
+          div.card
+            h3 Expert Teaching
+            div.card-box
+              div.card-img
+                img(src="/static/img/8.png")
+              div.card-content
+                p  This is the best dance academy of the universe.
+      sectiom#introSection 
+          h1 Our Sponsers 
+          div#sponsers
+            img(src="/static/img/logo1.png", alt="Sponser image", Class="SpImage")
+            img(src="/static/img/logo2.png", alt="Sponser image", Class="SpImage")
+            img(src="/static/img/logo3.png", alt="Sponser image", Class="SpImage")
+            img(src="/static/img/logo4.png", alt="Sponser image", Class="SpImage")
